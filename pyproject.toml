@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eachimpire-infergw_jd201"
+version = "0.1.0"
+description = "从输入中抽取数值，计算推理网关架构师·多租户的显存隔离相关的比值与占比，分母为零时明确报错"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "eachimpire" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://eachimpire.github.io"
+Repository = "https://github.com/eachimpire/infergw_jd201"
+Issues = "https://github.com/eachimpire/infergw_jd201/issues"
+
+[project.scripts]
+infergw_jd201 = "infergw_jd201:main"
+
+[tool.setuptools]
+py-modules = ["infergw_jd201"]
